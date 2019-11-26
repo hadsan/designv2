@@ -1,3 +1,3 @@
-#### Footer col 2
+#### Om mig
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Hadsan Hassan, 21 år, studerar just nu webbprogrammering vid Blekinges Tekniska Högskola och är utvecklaren av denna sidan.

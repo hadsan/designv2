@@ -1,25 +1,28 @@
 ---
 title: "Min fina titel"
+views:
+    byline:
+        region: main
+        template: anax/v2/block/default
+        sort: 2
+        data:
+            meta:
+                type: single
+                route: block/byline
 ---
 Min me-sida i kursen design
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
-
 [FIGURE src="image/me.jpg?w=500" class="right" caption="Bild på mig"]
 
-Detta är min me-sida i kursen. Denna sidan innehåller en presentation av mig själv. Underhåll denna sidan under hela kursen och uppdatera den efter hand och behov.
+Hej!
 
-Så, en presentation en bra början. Skriv några ord om dig själv. Jag börjar.
+Mitt namn är Hadsan Hassan. Jag har bott i Stehag, en mysig by i hjärtat av Skåne, för den största delen av mitt liv. Jag föddes dock i Munchen och bodde senare i Kanada.
 
-Mitt namn är Mikael Roos. Född och uppvuxen i Bankeryd, Småland, strax utanför Jönköping, i ett villaområde som byggdes upp samtidigt som vi flyttade in där. Jag gillade landhockey och har spelat bandy och hockey samt gått bowlinggymnasiet i Nässjö. Jag har varit städare, diskare, kallskänka, servitör och kock. På ett bananskal landade jag i Ronneby när jag började högskolan 1990 där och nu är jag kvar med fru, barn och så vidare.
+Jag har älskat djur (inte reptiler) sedan jag var liten och valde därför att gå naturvetenskapslinjen på gymnasiet. Mitt intresse svalnade dock ganska snabbt efter fysiken... så jag tog ett sabbatsår och fick ett intresse för programmering.
 
-Programmering har alltid intresserat mig sedan 13-årsåldern och min första dator var en Spectravideo 328 med bandspelare.
-
-Om jag skall nämna någon hobby, förutom webbprogrammering, så får det bli att bära sten på sommarstugetomten, och det finns sten så det räcker och blir över.
-
-Till och från får jag för mig att börja på lite hobbies, ett år satsade jag på pokerspel, ett annat år var det geocaching och sedan turfing. Nu ligger jag lågt med hobbies, men något kanske dyker upp...?
+Jag sökte då in till Software Engineering på BTH men efter ett år kom jag på att något inte kändes rätt så jag bytte hit till webbprogrammering i hopp om att lära mig mer! Förutom programmering gillar jag bad i all väder, fantasy böcker och filmer samt matlagning.
 
 Vi syns och hörs i forum och chatt!
 
-/Mikael
+/Hadsan

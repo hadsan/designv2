@@ -1,3 +1,6 @@
-#### Footer col 3
-
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+#### Länkar
+<div class="footer quote">
+<a href="https://dbwebb.se/kurser/design-v2">PA1436 på dbwebb</a>
+<a href="https://github.com/dbwebb-se/design">Kursens GitHub-repo</a>
+<a href="https://github.com/hadsan/designv2/">Mitt GitHub-repo</a.
+</div>

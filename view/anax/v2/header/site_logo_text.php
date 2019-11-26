@@ -13,11 +13,11 @@ namespace Anax\View;
 
 ?><span class="site-logo-text" >
     <a href="<?= url($homeLink) ?>">
-        <?php if (isset($siteLogoTextIcon)) : ?>
+        <?php if (isset($siteLogoText)) : ?>
         <span class="site-logo-text-icon" >
             <img src="<?= asset($siteLogoTextIcon) ?>" alt="<?= $siteLogoTextIconAlt ?>">
+            <h1><?= $siteLogoText ?></h1>
         </span>
         <?php endif; ?>
-        <?= $siteLogoText ?>
     </a>
 </span>
