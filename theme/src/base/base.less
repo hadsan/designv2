@@ -1,0 +1,269 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+ // variables
+@bgColor: #fff;
+@colorBody: black;
+@accentColor: green;
+@fontFamilyBody: sans-serif;
+@borderColor: red;
+@quoteColor: blue;
+
+// mixins
+.color(@color_var) {
+    color: @color_var;
+}
+
+.flex(@direction) {
+    flex-direction: @direction;
+}
+
+.flashmessage(@borderColor; @colorBody; @bgColor) {
+    border: 2px solid @borderColor;
+    background-color: @bgColor;
+    .color(@colorBody);
+}
+
+.fontStyleWeight(@fontWeight; @fontStyle) {
+    font-weight: @fontWeight;
+    font-style: @fontStyle;
+}
+
+.textDecoration(@text_decoration) {
+    text-decoration: @text_decoration;
+}
+
+.display(@display_var) {
+    display: @display_var;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    .color(@colorBody);
+    background-color: @bgColor;
+    font: 100.01%/1 @fontFamilyBody;
+}
+
+/* Hide submenu, leave this to kmom02 */
+.submenu(@var) {
+    .rm-desktop ul {
+        .display(@var);
+    }
+
+    /* Hide responsive/mobile menu, leave this to kmom02 */
+    .rm-navbar-max {
+        .display(@var);
+    }
+}
+
+fieldset {
+    padding-top: 24px;
+}
+
+p {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+
+.rm-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* flashmessage */
+.info {
+    .flashmessage(#92cae4; #205791; #d5edf8);
+}
+
+.warning {
+    .flashmessage(#f72f2f; #ff0000; #ffc2c2);
+}
+
+.info,
+.warning {
+    padding: .5em;
+    margin-bottom: 20px;
+}
+
+.flashmessage .flashmessage-icon {
+    float: right;
+    font-size: 3em;
+    padding-right: .5em;
+}
+/* flashmessage */
+
+.outer-wrap-header .site-logo-text h1 {
+    .color(@accentColor);
+    width: 60%;
+    text-transform: uppercase;
+    font-family: @alt_font;
+    float: right;
+}
+
+.block h4 {
+    text-transform: uppercase;
+    font-family: @alt_font;
+}
+
+.block.toc a,
+.next-previous a,
+.region-breadcrumb a {
+    .color(@colorBody);
+}
+
+.rm-max.rm-swipe-right .rm-mobile {
+    background-color: @accentColor;
+}
+a.rm-button.rm-clicked .rm-button-face-2 {
+    color: white;
+}
+
+.rm-max .rm-mobile .rm-submenu-button {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.block a {
+    .color(@accentColor);
+    .textDecoration(none);
+}
+
+.block a:hover   {
+    .textDecoration(underline);
+}
+
+.toc a:hover,
+.next-previous a:hover,
+.region-breadcrumb a:hover {
+    .color(@accentColor);
+}
+
+.breadcrumb-list li::after {
+    content: " » ";
+}
+
+.my-navbar li a {
+    .color(@colorBody);
+    font-family: @alt_font;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding: .5em;
+    .textDecoration(none);
+}
+
+.my-navbar li a:hover,
+.author-byline strong,
+a {
+    .color(@accentColor);
+}
+
+.article {
+    border-top: 1px solid @borderColor;
+    margin-bottom: 3em;
+}
+
+.quote p {
+    font-size: 2em;
+    .color(@quoteColor);
+    .fontStyleWeight(bold, italic);
+    width: 100%;
+}
+
+
+.quote figcaption {
+    float: right;
+    .fontStyleWeight(200, italic);
+    padding-right: 2em;
+}
+
+img {
+    width: 300px;
+}
+
+/* byline */
+.author-byline {
+    border-top: 1px solid @borderColor;
+    .display(flex);
+    .flex(row);
+}
+
+.author-byline p {
+    margin-left: 1.5em;
+}
+
+.author-byline figure {
+    margin-top: 1em;
+}
+
+.author-byline figcaption {
+    font-size: 12px;
+}
+
+.wrap-sidebar .block {
+    margin-bottom: 48px;
+}
+
+.author-byline img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.author-byline figcaption {
+    text-align: center;
+}
+
+/* byline */
+
+a > img {
+    border: 2px solid @borderColor;
+}
+
+figcaption > p {
+    margin: 0;
+    font-style: italic;
+}
+
+// footer section
+.footer.link a {
+    .color(@colorBody);
+    .display(flex);
+    .flex(column);
+    .textDecoration(underline);
+    padding-bottom: 4px;
+}
+
+.outer-wrap-footer {
+    min-height: 300px;
+    background-color: @accentColor;
+}
+
+.footer-column p {
+    margin: 2em;
+}
+
+.footer-column h4 {
+    margin-left: 2em;
+}
+
+.site-footer p {
+    text-align: center;
+    padding: 2em;
+}
+
+a.rm-button .rm-button-face-1 {
+  position: relative;
+  transition: color 0.1s ease;
+}
+// menu-button
+.fas.fa-bars {
+    font-size: 2em;
+    margin-top: 0.4em;
+    float: left;
+}

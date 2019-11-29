@@ -335,11 +335,11 @@ figcaption > p {
 
 /* footer */
 
-.footer.quote {
+.footer.link {
     margin: 2em;
 }
 
-.footer.quote a {
+.footer.link a {
     color: black;
     display: flex;
     flex-direction: column;
@@ -350,6 +350,7 @@ figcaption > p {
 .outer-wrap-footer {
     min-height: 300px;
     background-color: #E64864;
+
 }
 
 .footer-column {

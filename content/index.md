@@ -13,7 +13,7 @@ views:
 Min me-sida i kursen design
 =========================
 
-[FIGURE src="image/me.jpg?w=500" class="right" caption="Bild på mig"]
+[FIGURE src="http://www.student.bth.se/~hahs18/dbwebb-kurser/design/me/redovisa/htdocs/image/me.jpg??w=500?w=500" class="right" caption="Bild på mig"]
 
 Hej!
 

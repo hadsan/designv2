@@ -1,0 +1,140 @@
+/**
+ * Layout for responsive style through media queries.
+ */
+ @brdColor: black;
+
+@media screen and (max-width: 1500px) {
+    .site-logo {
+        display: none;
+    }
+}
+@media screen and (max-width: 1096px) {
+        .region-main.has-sidebar-left,
+        .region-main.has-sidebar-right {
+            margin-left: 2%;
+        }
+}
+@media screen and (max-width: 1119px) {
+    .next-previous {
+        margin-left: 13%;
+    }
+
+    .breadcrumb-list {
+        margin-left: 13%;
+        width: 50%;
+    }
+
+
+    .region-sidebar-right {
+    margin-left: 0;
+    margin-right: 0;
+}
+}
+
+@media screen and (max-width: 1052px) {
+    .my-navbar {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .outer-wrap-header .site-logo-text-icon img {
+        width: 4em;
+    }
+    .region-header-col-1 {
+        width: auto;
+    }
+
+}
+@media screen and (max-width: 750px) {
+    // stylechooser box minimize
+     select {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 671px) {
+    // style article
+    img {
+        width: 250px;
+    }
+
+    figcaption {
+        display: none;
+    }
+
+    .wrap-sidebar {
+        display: none;
+    }
+
+    .region-main.has-sidebar-left,
+    .region-main.has-sidebar-right {
+        // width: 90%;
+        margin-left: 13%;
+    }
+
+    .article {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .article .figure.right {
+        padding-bottom: 2em;
+        border-bottom: 1px solid @brdColor;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 550px) {
+// stack footer after 550px
+  .site-footer p {
+      text-align: left;
+      margin-left: 1em;
+      padding: 0;
+  }
+  .footer-column-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+    .footer-column {
+        width: 100%;
+      height: auto;
+    }
+}
+@media screen and (max-width: 422px) {
+    h1 {
+        font-size: x-large;
+    }
+    .outer-wrap-header .site-logo-text-icon img {
+        display: none;
+    }
+    .outer-wrap-header .site-logo-text h1 {
+        font-size: xx-large;
+    }
+    .author-byline p {
+    margin-left: .5em;
+}
+}
+@media screen and (max-width: 362px) {
+    .stylechooser table {
+        display: none;
+    }
+}
+@media screen and (max-width: 300px) {
+
+    img {
+        width: 90%;
+    }
+
+
+}
+@media screen and (max-width: 285px) {
+
+    .author-byline img {
+        display: none;
+    }
+
+
+}
