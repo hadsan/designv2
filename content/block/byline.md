@@ -1,7 +1,7 @@
 <!-- byline -->
 <div class="author-byline">
 <figure class="figure left">
-<a href="http://localhost:8080/dbwebb/design/me/redovisa/htdocs/image/me.jpg"><img src="http://localhost:8080/dbwebb/design/me/redovisa/htdocs/image/me.jpg" alt="Hadsan Hassan"/></a>
+<a href="http://www.student.bth.se/~hahs18/dbwebb-kurser/design/me/redovisa/htdocs/img/me.jpg"><img src="http://www.student.bth.se/~hahs18/dbwebb-kurser/design/me/redovisa/htdocs/img/me.jpg" alt="Hadsan Hassan"/></a>
 <figcaption>
 
 <p>Hadsan Hassan</p>
