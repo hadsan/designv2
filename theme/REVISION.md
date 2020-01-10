@@ -1,16 +1,15 @@
 Revision history
-=======================
+==================
 
+v1.0.1 (10-11-2019)
+--------------------------
+* Done with video series kmom01.
 
+v2.0.0 (10-11-2019)
+--------------------------
+* Done with video series kmom02.
 
-v1.0.1 (2018-11-12)
-------------------------
-
-* Released with kmom03 for design-course.
-
-
-
-v1.0.0 (2018-10-23)
-------------------------
-
-* Prepared kmom02 for design course.
+v3.0.0 (10-11-2019)
+--------------------------
+* Done with video series kmom03.
+* Adding Revision history.

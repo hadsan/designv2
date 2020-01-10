@@ -5010,7 +5010,7 @@ body {
   padding: 0;
   color: black;
   background-color: #D2E8E1;
-  font: 100.01%/1 sans-serif;
+  font: 100.01%/1 "sans-serif";
 }
 /* Hide submenu, leave this to kmom02 */
 fieldset {
@@ -5307,11 +5307,12 @@ a.rm-button .rm-button-face-1 {
 .next-previous {
   margin-bottom: 24px;
 }
-.next-previous .next {
+.next-previous > .next {
   float: right;
+  width: 50%;
   text-align: right;
 }
-.previous .previous {
+.next-previous > .previous {
   width: 50%;
 }
 .breadcrumb-list ul {
@@ -5423,6 +5424,12 @@ a.rm-button .rm-button-face-1 {
   }
   .author-byline p {
     margin-left: 0.5em;
+  }
+  .author-byline {
+    display: block;
+  }
+  .author-byline figcaption {
+    display: none;
   }
 }
 @media screen and (max-width: 362px) {
