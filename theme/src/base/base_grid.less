@@ -39,7 +39,6 @@
 
 html {
     overflow-y: scroll;
-
 }
 
 body {
@@ -47,8 +46,13 @@ body {
     padding: 0;
     .color(@colorBody);
     background-color: @bgColor;
-    font: 100.01%/1 @fontFamilyBody;
+    #desinax-hgrid.font(@fontSizeBody);
+    font-family: @fontFamilyBody;
 }
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
 
 /* Hide submenu, leave this to kmom02 */
 .submenu(@var) {
@@ -102,7 +106,7 @@ p {
 
 .outer-wrap-header .site-logo-text h1 {
     .color(@accentColor);
-    width: 60%;
+    // width: 60%;
     text-transform: uppercase;
     font-family: @alt_font;
     float: right;
@@ -163,6 +167,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .author-byline strong,
 a {
     .color(@accentColor);
+    text-decoration: none;
 }
 
 .article {
@@ -177,7 +182,10 @@ a {
     width: 100%;
 }
 
-
+a.rm-button.rm-clicked .rm-button-face-2,
+.rm-mobile {
+    color: black;
+}
 .quote figcaption {
     float: right;
     .fontStyleWeight(200, italic);
@@ -245,18 +253,18 @@ figcaption > p {
     background-color: @accentColor;
 }
 
-.footer-column p {
-    margin: 2em;
-}
+// .footer-column p {
+//     margin: 2em;
+// }
+//
+// .footer-column h4 {
+//     margin-left: 2em;
+// }
 
-.footer-column h4 {
-    margin-left: 2em;
-}
-
-.site-footer p {
-    text-align: center;
-    padding: 2em;
-}
+// .site-footer p {
+//     text-align: center;
+//     padding: 2em;
+// }
 
 a.rm-button .rm-button-face-1 {
   position: relative;
@@ -265,6 +273,6 @@ a.rm-button .rm-button-face-1 {
 // menu-button
 .fas.fa-bars {
     font-size: 2em;
-    margin-top: 0.4em;
+    // margin-top: 0.5em;
     float: left;
 }
